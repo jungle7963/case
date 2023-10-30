@@ -1,0 +1,124 @@
+page{
+  background-color: #f1f6f9;
+  padding-bottom: 130rpx;
+  font-size: 29rpx;
+}
+
+.goodsDetails{
+  margin: 20rpx 20rpx 0 20rpx;
+  overflow: hidden;
+  border-radius: 20rpx;
+  background-color: #fff;
+}
+
+.img{
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+.tasks{
+  margin: 40rpx 20rpx 0 20rpx;
+}
+
+.task{
+  border-radius: 15rpx;
+  padding: 0 60rpx 0 50rpx;
+  height: 130rpx;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tm{
+  text-align: center;
+  padding: 20rpx 0 0 17rpx;
+  font-size: 30rpx;
+  width: 70%;
+  font-weight: 700;
+}
+
+.t_title{
+    width: 100%;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-bottom: 10rpx;
+    position: relative;
+}
+
+.qs{
+  margin-top: 35rpx;
+  height: 65rpx;
+  width: 18%;
+  text-align: center;
+  color: #fff;
+  line-height: 65rpx;
+  background-color: #346df0;
+  border-radius: 8rpx;
+  font-size: 25rpx;
+}
+
+.icon-box {
+  background: #fff;
+  border-radius: 23rpx;
+  height: 164rpx;
+  justify-content: space-evenly;
+  margin: 16rpx auto 0;
+  width: 100%;
+}
+
+.icon-box,.icon-item {
+  display: flex;
+}
+
+.icon-item {
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 16rpx 0;
+  width: 20%;
+}
+
+.icon-image {
+  height: 96rpx;
+  width: 96rpx;
+}
+
+.icon-title {
+  color: #333;
+  font-size: 20rpx;
+  overflow: hidden;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.sindex{
+    width: 30rpx;
+    height: 30rpx;
+    position: absolute;
+    margin-top: 6rpx;
+}
+
+.itt{
+    margin-left: 35rpx;
+}
+
+.swiper-nav{background-color: #fff;-webkit-tap-highlight-color:rgba(0,0,0,0);white-space: nowrap
+}
+.swiper-nav .item-nav{position: relative;padding: 30rpx 32rpx;color: #333;font-size: 30rpx;cursor: pointer;display: inline-block}
+.swiper-nav .active{color: #346df0}
+.swiper-nav .active::after{content:'';position: absolute;left: 32rpx;right: 32rpx;height:0;border-bottom: 4rpx solid #346df0;border-radius: 4rpx;bottom: 18rpx}
+
+.totop{
+    position: fixed;
+    top: 0;
+    padding : 0 20rpx;
+    left: 0;
+    background-color:#fff; 
+    z-index: 1;
+  }
+

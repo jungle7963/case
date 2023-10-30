@@ -1,0 +1,3 @@
+.yc{
+    word-break: break-all;
+}

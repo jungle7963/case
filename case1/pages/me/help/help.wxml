@@ -1,0 +1,17 @@
+<view class="page">
+    <view class="padding bg-white margin-bottom">
+        <view class="flex flex-wrap" style="line-height: 55rpx;">
+            <view class="basis-ql text-df padding-sm solid-bottom">
+                <view class="title text-blue" style="font-size: 32rpx;">任务： </view>
+                <view class="text-black" style="margin-top: 15rpx;">1：用户需在登录状态下才可领取任务，同时领取任务不多于5个。</view>
+                <view class="text-black" style="margin-top: 15rpx;">2：领取任务需在1小时内完成，未在规定时间完成则任务失效，需重新领取。</view>
+                <view class="text-black" style="margin-top: 15rpx;">3：审核中和已完成任务不可再领取，审核未通过任务可再次领取。</view>
+            </view>
+            <view class="basis-ql text-df padding-sm solid-bottom">
+                <view class="title text-blue" style="font-size: 32rpx;">提现： </view>
+                <view class="text-black" style="margin-top: 15rpx;">1：单次提现额不低于10元。</view>
+                <view class="text-black" style="margin-top: 15rpx;">2：审核成功后即可完成提现。</view>
+            </view>
+        </view>
+    </view> 
+</view>

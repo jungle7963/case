@@ -1,0 +1,162 @@
+page{
+  background-color: #f1f6f9;
+  padding-bottom: 100rpx;
+  font-size: 29rpx;
+}
+
+.dl{
+    background-color: #346df0;
+    padding-bottom: 120rpx;
+  }
+
+.dl_one{
+  display: flex;
+  align-items: flex-start;
+}
+
+.dl_cg{
+  display: flex;
+  justify-content: space-between;
+}
+
+.userinfo-nickname{
+  margin-left: 30rpx;
+  padding-top: 20rpx;
+  font-size: 30rpx;
+}
+
+.bianji{
+  padding: 70rpx 60rpx 0 0;
+  font-size: 25rpx;
+  color: #fff;
+}
+
+.dlone_wd{
+  width: 150rpx;
+  height: 150rpx;
+  background-color: #fff;
+  border-radius: 50%;
+  margin: 10rpx 40rpx 40rpx;
+}
+
+.dlone_text{
+  margin-top: 20rpx;
+  color: #fff;
+  font-size: 35rpx;
+  font-weight: 700;
+}
+
+.balance{
+    margin: 30rpx;
+    margin-top: -80rpx;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 20rpx;
+  }
+
+.m{
+    padding: 35rpx 40rpx;
+}
+
+.t{
+    padding: 35rpx 40rpx;
+    margin-right: 115rpx;
+    border-left: 1rpx solid #f1f6f9;
+}
+
+.money{
+    font-size: 40rpx;
+    font-weight: 700;
+    margin-bottom: 8rpx;
+}
+  
+.yj{
+  margin: 30rpx;
+  padding: 40rpx;
+  background-color: #fff;
+  border-radius: 20rpx;
+}
+
+.yj_one{
+  display: flex;
+  justify-content: space-between;
+}
+
+.yj_two{
+  margin-top: 85rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.yjtwo_icon{
+  height: 70rpx;
+  margin-left: 10rpx;
+  width: 70rpx;
+  display: inline-block;
+  max-width: 100%;
+  position: relative;
+  z-index: 0;
+}
+
+.ph{
+  margin: 30rpx;
+  border-radius: 20rpx;
+  padding: 1rpx 40rpx 40rpx 40rpx;
+  background-color: #fff;
+}
+
+.ph_li{
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  margin-top: 40rpx;
+}
+
+.phli_left{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.phli_icon{
+  height: 40rpx;
+  width: 40rpx;
+  margin-right: 15rpx;
+  max-width: 100%;
+}
+
+.icon-box {
+  background: #fff;
+  border-radius: 24rpx;
+  height: 164rpx;
+  justify-content: space-evenly;
+  margin: 16rpx auto 0;
+  width: 100%;
+}
+
+.icon-box,.icon-item {
+  display: flex;
+}
+
+.icon-item {
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 16rpx 0;
+  width: 20%;
+}
+
+.icon-image {
+  height: 96rpx;
+  width: 96rpx;
+}
+
+.icon-title {
+  color: #333;
+  font-size: 20rpx;
+  overflow: hidden;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+}
+

@@ -1,0 +1,21 @@
+<view class="page">
+    <view class="tasks" wx:if="{{list.length!=0}}" wx:for="{{list}}" wx:key="index">
+        <view class="task">
+            <view class="text-sm">提现时间：{{item.create_at}}</view>
+            <view class="text-sm">提现金额：{{item.amount}}</view>
+        </view>
+        <view class="s">
+            <view>预计24小时内到账</view>
+            <view style="color: {{item.status==0?'red':'#346df0'}}">{{item.status==0?'审核未通过':item.status==1?'审核中':item.status==2?'审核通过':item.status==3?'打款中':item.status==4?'已打款':item.status==5?'已收款':''}}</view>
+        </view>
+        <view class="faild" wx:if="{{item.status == 0}}">
+            <view style="color: red">审核未通过原因：{{item.remark}}</view>
+        </view>
+    </view>
+    <view wx:if="{{list.length==0}}">
+        <view class="flex  justify-center">
+            <image class="justify-center " mode="widthFix" src="../../../../images/nodata.png" style="width:360rpx;margin-top:200rpx;"></image>
+        </view>
+        <view class="text-df text-grey flex justify-center margin-top">暂无提现明细</view>
+    </view>
+</view>

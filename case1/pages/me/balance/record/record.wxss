@@ -1,0 +1,41 @@
+page{
+    background-color: #f1f6f9;
+    padding-bottom: 130rpx;
+    font-size: 29rpx;
+}
+
+.tasks{
+    margin: 40rpx 20rpx 0 20rpx;
+  }
+  
+.task{
+    padding: 0 40rpx 0 30rpx;
+    height: 80rpx;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding-top: 25rpx;
+}
+
+.s{
+    padding: 0 40rpx 0 30rpx;
+    height: 50rpx;
+    width: 100%;
+    font-size: 25rpx;
+    color: #a8a8a8;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.faild{
+    width: 100%;
+    font-size: 25rpx;
+    background-color: #fff;
+    padding: 0 40rpx 20rpx 30rpx;
+    word-break: break-all;
+	overflow: auto;
+	white-space: normal;
+}

@@ -1,0 +1,24 @@
+<form bindsubmit="formSubmit" class="" reportSubmit="true">
+    <view class="bg-white cu-card case margin-sm radius">
+        <view class="cu-form-group">
+            <view class="title">头像:</view>
+            <view bindtap="uplaod" class="cu-avatar round" style="background-image:url({{headimg}});"></view>
+        </view>
+        <view class="cu-form-group" style="padding-right: 15rpx;">
+            <view class="title">用户名:</view>
+            <input style="text-align: right;" class="radius" name="nickname" placeholder="" value="{{detail.nickname}}"></input>
+        </view>
+        <view class="cu-form-group" style="padding-right: 15rpx;">
+            <view class="title">姓名:</view>
+            <input style="text-align: right;" class="radius" name="username" placeholder="" value="{{detail.username}}"></input>
+        </view>
+        <view class="cu-form-group" style="padding-right: 15rpx;">
+            <view class="title">手机号：</view>
+            <input style="text-align: right;" class="radius" name="phone" placeholder="" type="number" value="{{detail.phone}}"></input>
+        </view>
+    </view>
+    <view class="text-center text-sm text-blue">完善信息，提现更放心</view>
+    <view class="padding flex flex-direction">
+        <button class="cu-btn block bg-ox margin-tb-sm lg" style="width: 100%;" formType="submit">保存修改</button>
+    </view>
+</form>

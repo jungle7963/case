@@ -1,0 +1,14 @@
+.close-reason {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 500rpx;
+}
+
+.content{
+    width: 100%;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

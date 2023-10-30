@@ -1,0 +1,19 @@
+<view class="page">
+    <view class="rank_one">
+        <image class="img" src="../../../images/first.png" style="width: 80rpx; height: 80rpx;"></image>
+    </view>
+    <view class="rank_two">
+       <view style="display: flex; justify-content: space-between;">
+        <image class="img" src="../../../images/second.png" style="width: 80rpx; height: 80rpx; margin-left: 70rpx;"></image>
+        <image class="img" src="../../../images/third.png" style="width: 80rpx; height: 80rpx; margin-right: 70rpx;"></image>
+       </view>
+       <view style="margin: 30rpx 0">
+            <view class="rank_content" wx:for="{{rankList}}" wx:key="index">
+                <image wx:if="{{index<3}}" src="../../../images/{{index==0 ? 'first.png' : index==1 ? 'second.png' : index==2 ? 'third.png' : ''}}" style="width: 60rpx; height: 60rpx; margin:10rpx 0 0 50rpx"></image>
+                <view wx:else style="width: 60rpx; height: 60rpx; margin:10rpx 0 0 50rpx; text-align: center;">{{index+1}}</view>
+                <view class="nickname">{{item.nickname+'...'}}</view>
+                <view style="margin-right: 50rpx; width: 100rpx; text-align: right;">{{item.money}} 元</view>
+            </view>
+       </view>
+    </view>
+</view>

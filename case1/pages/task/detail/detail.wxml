@@ -1,0 +1,60 @@
+<view class="padding bg-white margin-bottom">
+    <view class="flex flex-wrap">
+        <view class="title yc" style="padding: 0 20rpx; font-weight: 700; font-size: 33rpx;">{{detail.title}}</view>
+    </view>
+</view>
+<view class="padding bg-white margin-bottom">
+    <view class="flex flex-wrap">
+        <view class="basis-ql text-df padding-sm solid-bottom">
+            <view class="title text-blue" style="font-size: 32rpx;">任务： </view>
+            <rich-text class="text-black yc" nodes="{{detail.content}}"></rich-text>
+        </view>
+        <view class="basis-ql text-df padding-sm solid-bottom">
+            <view class="title text-blue" style="font-size: 32rpx;">要求： </view>
+            <text class="text-black yc"> {{detail.demand}}</text>
+        </view>
+    </view>
+</view> 
+
+<view class="padding bg-white margin-bottom" wx:if="{{status == 1 || status == 2 || status == 3}}">
+        <view class="basis-ql text-df solid-bottom padding-sm" style="padding-top: 10rpx;">
+            <view class="text-sm" style="margin-bottom: 13rpx;">提交时间：{{create_time}}</view>
+            <view class="text-sm" wx:if="{{status == 2 || status == 3}}">审核时间：{{audit_datetime}}</view>
+        </view>
+</view> 
+
+<view wx:if="{{status == 0}}">
+    <view class="cu-bar bg-white margin-top-sm solid-bottom">
+        <view class="cuIcon-titles text-blue" style="font-size: 35rpx;"> 请按要求上传截图</view>
+        <view class="action"> {{imgList.length}}/3 </view>
+    </view>
+    <view class="cu-form-group">
+        <view class="grid col-3 grid-square flex-sub padding-sm">
+            <view class="padding-xs bg-img" style="background-image:url({{item}});" wx:for="{{imgList}}" wx:key="index">
+                <view bindtap="deleteImg" class="cu-tag bg-red" data-id="{{index}}">
+                    <text class="cuIcon-close"></text>
+                </view>
+            </view>
+            <view bindtap="uplaod" class="padding-xs solids" wx:if="{{imgList.length<3}}">
+                <text class="cuIcon-cameraadd" wx:if="{{loading}}"></text>
+                <text class="cuIcon-loading2 iconfont-spin" wx:else></text>
+            </view>
+        </view>
+    </view>
+    <view class="padding flex flex-direction">
+        <button class="cu-btn block bg-ox margin-tb-sm lg" style="width: 100%;" bindtap="process" data-imgList="{{imgList}}" data-id="{{detail.id}}">提交赚￥{{detail.money}} （{{hours}}:{{time}}）</button>
+    </view>
+</view>
+
+<view wx:else>
+    <view class="cu-bar bg-white margin-top-sm solid-bottom">
+        <view class="cuIcon-titles text-blue" style="font-size: 35rpx;"> 已上传截图</view>
+    </view>
+    <view wx:if="{{status == 3}}" class="cu-form-group" style="width: 100%; padding-left: 49rpx; color: red;">审核失败原因：{{failed}}</view>
+    <view class="cu-form-group">
+        <view class="grid col-3 grid-square flex-sub padding-sm">
+            <view class="padding-xs bg-img" style="background-image:url({{item}});" wx:for="{{imgList}}" wx:key="index">
+            </view>
+        </view>
+    </view>
+</view>
