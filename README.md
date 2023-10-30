@@ -1,20 +1,14 @@
 部分代码及个别效果图
 <h1>case1:</h1>
 
-![首页](case1/screenshot/index.png)
+![首页](case1/screenshot/首页.png)
 
-![我的](case1/screenshot/me.png)
+![我的](case1/screenshot/我的.png)
 
-![已领取](case1/screenshot/1.png)
+<h1>case2:</h1>
 
-![审核中](case1/screenshot/2.png)
-
-![已通过](case1/screenshot/3.png)
-
-![未通过](case1/screenshot/4.png)
+![case2](case2/screenshot/case2.png)
 
 <h1>case3:</h1>
 
-![首页](case3/screenshot/1.png)
-
-![首页](case3/screenshot/2.png)
+![case3](case3/screenshot/case3.png)
