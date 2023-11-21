@@ -1,0 +1,13 @@
+/.idea
+/runtime
+/node_modules
+/vendor
+/view/node_modules
+/public/storage
+/public/!download/
+/public/download/*
+/.vscode
+*.log
+yarn.lock
+composer.lock
+.travis.yml
