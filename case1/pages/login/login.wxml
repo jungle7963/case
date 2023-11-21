@@ -1,7 +1,0 @@
-<view class="container">
-  <view style="margin-top: 10%; width: 100%;">
-      <image class="dlone_wd" src="../../images/touxiang.png" mode="cover"></image>
-      <button class="cu-btn block bg-ox margin-tb-sm lg" style="width: 80%;" wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile">登录</button>
-      <button bindtap="cancel" class="cu-btn block margin-tb-sm lg" style="width: 80%; margin-top: 33rpx;"> 取消 </button>
-  </view>
-</view>
